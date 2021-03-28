@@ -5,8 +5,10 @@ class Song
   @@all = []
 
   def initialize(name, artist = nil, genre = nil)
+    @name = name
+    self.genre = genre if genre
     self.artist = artist if artist
-  end
+ end
 
   def artist=(artist)
     @artist = artist
